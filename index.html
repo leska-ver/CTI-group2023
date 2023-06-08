@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+  <!-- <meta name="description" content="test2" />
+  <meta name="keywords" content="test1"> -->
+  <title>CIT group</title>
+  <!-- <meta name="robots" content="max-image-preview:large" />
+  <link rel="https://api.w.org/" href="https://dvoreckiy.com/wp-json/" />
+  <link rel="alternate" type="application/json" href="https://dvoreckiy.com/wp-json/wp/v2/pages/28" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dvoreckiy.com/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dvoreckiy.com/wp-includes/wlwmanifest.xml" />
+  <meta name="generator" content="WordPress 6.2.2" />
+  <link rel="canonical" href="https://dvoreckiy.com/" />
+  <link rel="shortlink" href="https://dvoreckiy.com/" />
+  <link rel="alternate" type="application/json+oembed"
+    href="https://dvoreckiy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdvoreckiy.com%2F" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://dvoreckiy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdvoreckiy.com%2F&#038;format=xml" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/favicon/site.webmanifest">
+  <link rel="mask-icon" color="#5bbad5"
+    href="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/favicon/safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper"><!-- wrapper здесь ломает слайдер. Но и без его обёртки Слайд ломает. НЕ УДАЛЯТЬ!!! -->
+    <div class="header-mob">
+      <div class="header-mob-body">
+        <div class="header-mob-top">
+          <div class="header-mob-logo">
+            <img src="https://dvoreckiy.com/wp-content/uploads/2023/05/logo_footer.svg" alt="">
+          </div>
+          <a href="#" class="header-mob-close">
+            <img src="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/header-mob-close_img.svg" alt="">
+          </a>
+        </div>
+        <div class="header-mob-bottom">
+          <ul id="menu-menu-in-header" class="header-mob-menu">
+            <li id="menu-item-512-2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512-2">
+              <a href="#">Почему мы</a>
+            </li>
+            <li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512">
+              <a href="#">Продажа</a>
+            </li>
+            <li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513">
+              <a href="#">Подбор</a>
+            </li>
+            <li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514">
+              <a href="#">Обмен</a>
+            </li>
+            <li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515">
+              <a href="#">Ипотека</a>
+            </li>
+            <li id="menu-item-516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-516">
+              <a href="#">Сопровождение</a>
+            </li>
+          </ul>
+          <a href="tel:+7(800)444-64-57" class="header-mob-tel">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+              viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path class="fil0" fill="#FEFEFE" fill-rule="nonzero"
+                d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+            </svg>
+            <span>8 (800) 444-64-57</span>
+          </a>
+          <a href="tel:+7(800)326-70-10" class="header-mob-tel">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+              viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path class="fil0" fill="#FEFEFE" fill-rule="nonzero"
+                d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+            </svg>
+            <span>8 (800) 326-70-10</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="global-welcome global-welcome1"
+      style="background-image: url('https://cdn-p.cian.site/images/0/627/745/smolinskiy-chelyabinsk-jk-547726058-6.jpg');">
+      <header class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="navbar-brand">
+              <img src="img/CTI бел на син пнг.png" alt="logo">
+            </div>
+            <div class="header-block-tel">
+              <a href="tel:+7(800)444-64-57" class="header-tel">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+                  viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="fil0" fill="#092972" fill-rule="nonzero"
+                    d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+                </svg>
+                <span>8 (800) 444-64-57</span>
+              </a>
+              <a href="tel:+7(800)326-70-10" class="header-tel">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+                  viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="fil0" fill="#092972" fill-rule="nonzero"
+                    d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+                </svg>
+                <span>8 (800) 326-70-10</span>
+              </a>
+            </div>
+            <!-- Burger 768px-->
+            <button class="navbar-toggler">
+              <svg viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                  d="M4 7h22M4 15h22M4 23h22" />
+              </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul id="menu-menu-in-header-1" class="header-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512-2">
+                  <a href="#gency">Почему мы</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512">
+                  <a href="#">Продажа</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513">
+                  <a href="#">Подбор</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515">
+                  <a href="#">Ипотека</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-516">
+                  <a href="#">Сопровождение</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514">
+                  <a href="#">Страхование</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514-2">
+                  <a href="#">Межрегиональные сделки</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514-3">
+                  <a href="#">Предложения</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="global-welcome-cont">
+        <div class="container">
+          <h1 class="global-welcome__title">
+            Недвижимость <span class="display-block">Челябинска</span>
+          </h1>
+          <div class="global-welcome__text">
+            Для жизни и бизнеса – найдем и договоримся <span class="display-block">с покупателем и продавцом</span>
+          </div>
+          <!-- anchor анимационное движение вверх Слайдера -->
+          <a href="#main-services" class="btn anchor btn_global-welcome">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="main-services" id="main-services">
+      <div class="container">
+        <h2 class="global-title">
+          Риэлторский сервис <span class="display-block">на экспертном уровне</span>
+        </h2>
+        <div class="main-services-wrap">
+          <div class="main-service main-service_athensGray">
+            <div class="main-service-icon">
+              <img src="./img/servis_1.svg" alt="servis_1">
+            </div>
+            <h3 class="main-service__title">Продажа</h3>
+            <div class="main-service__white global-text">Делаем классную упаковку объекта, проводим показы, сопровождаем под ключ.</div>
+          </div>
+          <div class="main-service main-service_toreaBay">
+            <div class="main-service-icon">
+              <img src="./img/servis_2.svg" alt="servis_2">
+            </div>
+            <h3 class="main-service__title">Подбор </h3>
+            <div class="main-service__white global-text">Для покупки идеальной квартиры или дома, внимательно относимся к запросу и
+              деталям. Поможем оформить ипотеку.</div>
+          </div>
+          <div class="main-service main-service_mariner">
+            <div class="main-service-icon">
+              <img src="./img/servis_3.svg" alt="servis_3">
+            </div>
+            <h3 class="main-service__title">Обмен </h3>
+            <div class="main-service__white global-text">В любом направлении: жилые и коммерческие объекты, с доплатой и без.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-about global-wrap global-wrap_reverce">
+      <div class="global-wrap-text">
+        <h2 class="global-title">О компании</h2>
+        <div class="global-text">
+          <p>«CIT group» — эксперт на рынке недвижимости Челябинска с 2015 года. Мы разработали собственную систему
+            продаж, с которой быстрее, безопаснее и выгоднее для клиентов закрываем любые сделки. Помогаем оформить
+            ипотеку в надежном банке — Сбербанк,
+            ВТБ и пр. Получаем мощный отклик с агрегаторов Авито, Циан, Домклик, N1, Яндекс Недвижимость. Ближайшая зона
+            роста АН &#171;CIT group &#187;– открытие филиалов в крупнейших городах России.
+          </p>
+        </div>
+        <div class="main-about__exclusiv">
+          <img src="https://dvoreckiy.com/wp-content/uploads/2023/05/exclusive.svg" alt="">
+          <div>Эксклюзивный подход</div>
+        </div>
+        <div class="global-text">
+          <p>Одну заявку ведет несколько агентов, которые сменяют друг друга поэтапно. Узкий профиль существенно повышает
+            качество обслуживания. Сопровождение сделки ведут только практикующие юристы.</p>
+        </div>
+      </div>
+      <div class="global-wrap-thumb">
+        <img src="https://rumahpedia.info/wp-content/uploads/2020/01/Warna-Cat-Rumah-Cantik.jpg" alt="Домашний интерьер">
+      </div>
+    </section>
+    <section class="main-statiscticks">
+      <div class="container">
+        <div class="main-statiscticks-wrap">
+          <div class="main-statisctick">
+            <div class="main-statisctick__number">1500</div>
+            <div class="main-statisctick__text">
+              заявок/месяц <span class="display-block">на покупку</span>
+            </div>
+          </div>
+          <div class="main-statisctick">
+            <div class="main-statisctick__number">1800</div>
+            <div class="main-statisctick__text">
+              объектов в горячей <span class="display-block">базе</span>
+            </div>
+          </div>
+          <div class="main-statisctick">
+            <div class="main-statisctick__number">25+</div>
+            <div class="main-statisctick__text">
+              партнерских банков <span class="display-block">и агрегаторов</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-statiscticks-bottom">
+          <h2 class="global-title fw-700">Больше экспертов = быстрее и выгоднее сделка </h2>
+          <div class="global-text">
+            <p>Запрос на покупку или продажу недвижимости в нашем агентстве всегда прорабатывает целая команда
+              профессионалов. Мы на практике убедились, что это в разы повышает эффективность, приносит комфорт и выгоду
+              клиенту, а также исключает ошибки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-advantages global-wrap">
+      <div class="global-wrap-thumb global-text">
+        <div class="global-wrap-thumb-wrap">
+          <ul class="main-advantages-list">
+            <li>
+              <div class="title">Риэлтор</div>
+              <p>Обеспечивает контакт покупателя и продавца. На одного клиента работает 2-3 риэлтора.</p>
+            </li>
+            <li>
+              <div class="title">Маркетолог</div>
+              <p>Разрабатывает продажный и рекламный контент для объекта. Размещает его на 67 площадках: Авито, Домклик, Циан, N1, Яндекс Недвижимость, Юла и Метр квадратный, досках объявлений провинциальных городов и Ближнего зарубежья.</p>
+            </li>
+            <li>
+              <div class="title">Юрист</div>
+              <p>Сопровождает сделку, отслеживает соответствие закону и защищает права обеих сторон. С ним 100% безопасно.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="global-wrap-text">
+        <h2 class="global-title2">
+          Кроме своего штата <span class="display-block">мы вовлекаем в процесс:</span>
+        </h2>
+        <div class="global-text global-text_ul-dotted global-text_ul-dotted-deepSapphire">
+          <ul>
+            <li>Менеджеров рекламных площадок для повышения продаж.</li>
+            <li>Представителей и руководителей банков, когда нужно ускорить сделку.</li>
+            <li>Государственные учреждения, если не хватает документов, есть арест на имущество или в сделке есть дети.
+            </li>
+            <li>Нотариусов, оценщиков и страховые компании.</li>
+          </ul>
+        </div>
+        <!-- anchor анимационное движение вверх Слайдера -->
+        <a href="#contact-form" class="anchor btn btn_request btn_main-advantages">
+          <span>Оставить заявку</span>
+          <img src="https://dvoreckiy.com/wp-content/themes/dvoreckiy/img/svg/1/button_icon_arrow.svg" alt="">
+        </a>
+      </div>
+    </section>
+    <section class="main-control global-wrap global-wrap_reverce">
+      <div class="global-wrap-text">
+        <h2 class="global-title">
+          CIT group управляет <span class="display-block">недвижимостью</span>
+        </h2>
+        <div class="global-text global-text_ul-dotted global-text_ul-dotted-cerulean">
+          <p>Именно клиент задает нам направление работы и сроки, а мы проводим его к безопасному и комфортному решению
+            запроса на недвижимость:</p>
+          <ul>
+            <li>Активная база — всегда есть продавец с нужной недвижимостью.</li>
+            <li>Реальные покупатели.</li>
+            <li>С каждым клиентом работаем команда разнопрофильных экспертов.</li>
+            <li>Не тратим ваше время впустую.</li>
+            <li>Грамотно вкладываем средства и ресурсы для решения клиентской задачи.</li>
+            <li>Всегда добиваемся денежной выгоды для клиента.</li>
+            <li>Скрупулезно относимся к документам.</li>
+            <li>Имеем налаженное партнерство с нотариусами, агрегаторами, банками, строительными компаниями,
+              государственными органами.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="global-wrap-thumb">
+        <img src="https://www.insidetrack.org/wp-content/uploads/2020/06/JobHunting_Thumb.jpg" alt="Беседа с клиентом">
+      </div>
+    </section>
+    <section class="main-functions">
+      <div class="container">
+        <div class="main-functions-zag">
+          <h2 class="global-title mb-0">Полный арсенал возможностей</h2>
+          <div class="global-text2">Мы ставим безопасность и комфорт на первое место:</div>
+        </div>
+        <div class="main-functions-wrap">
+          <div class="main-function">
+            <div class="main-function-icon">
+              <img src="./img/arsenal_1.svg" alt="Иконка договор">
+            </div>
+            <h2 class="global-title2">Каждый договор – </h2>
+            <div class="global-text">с сопровождением юриста.</div>
+          </div>
+          <div class="main-function">
+            <div class="main-function-icon">
+              <img src="./img/arsenal_2.svg" alt="Иконка жильё">
+            </div>
+            <h2 class="global-title2">Каждый объект – </h2>
+            <div class="global-text">
+              проверен и не имеет <span class="display-block">скрытых проблем.</span>
+            </div>
+          </div>
+          <div class="main-function">
+            <div class="main-function-icon">
+              <img src="./img/arsenal_3.svg" alt="Иконка клиент">
+            </div>
+            <h2 class="global-title2">Каждый клиент – </h2>
+            <div class="global-text">окружен командой профессионалов.</div>
+          </div>
+          <div class="main-function">
+            <div class="main-function-icon">
+              <img src="./img/arsenal_4.svg" alt="Иконка запрос">
+            </div>
+            <h2 class="global-title2">Каждый запрос – </h2>
+            <div class="global-text">решаем максимально быстро, четко.</div>
+          </div>
+          <div class="main-function">
+            <div class="main-function-icon">
+              <img src="./img/arsenal_5.svg" alt="Иконка отчёт">
+            </div>
+            <h2 class="global-title2">Каждое требование – </h2>
+            <div class="global-text">соблюдаем бескомпромиссно.</div>
+          </div>
+        </div>
+        <div class="global-text">
+          <p>Помогаем улучшить жилищные условия, решить проблему с помощью недвижимости, перевести ее в деньги, а также
+            использовать для бизнеса в формате аренды, покупки, продажи, инвестиции.</p>
+        </div>
+      </div>
+    </section>
+    <section class="main-help global-wrap">
+      <div class="global-wrap-thumb">
+        <img src="./img/main-help_thumb.jpg" alt="Рукопожатие с клиентом">
+      </div>
+      <div class="global-wrap-text">
+        <h2 class="global-title">
+          Вдохновляем других, <span class="display-block">помогаем своим</span>
+        </h2>
+        <div class="global-text2 fw-400">
+          <p>Агентство недвижимости «CIT group» имеет статус лидера на рынке недвижимости. Наши методики стараются
+            повторить конкуренты, а о наших результат клиенты охотно рассказывают друзьям и знакомым.</p>
+        </div>
+        <div class="global-text">
+          <p>Наш сервис построен на принципе комфорта для клиента: он вовлечен минимально, но при этом на 100% соблюдаются
+            его интересы и права. Вместо того, чтобы долго и безрезультатно повторять поверхностные шаги риэлтора, вы
+            передаете дело в наши
+            руки. За этим стоит целый комплекс действий и наша репутация, которая способствует упрощенному решению
+            вопросов с партнерскими организациями и гос. органами.</p>
+        </div>
+        <!-- anchor анимационное движение вверх Слайдера -->
+        <a href="#contact-form" class="anchor btn btn_request btn_main-advantages">
+          <span>Оставить заявку
+          </span>
+          <img src="./img/button_icon_arrow.svg" alt="SVG arrow">
+        </a>
+      </div>
+    </section>
+    <section class="contact-form anketa-form-cont" id="contact-form">
+      <div class="container">
+        <div role="form" class="wpcf7" id="wpcf7-f6-o1" lang="ru-RU" dir="ltr">
+          <div class="screen-reader-response"></div>
+          <form action="/#wpcf7-f6-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+            <div style="display: none;">
+              <input type="hidden" name="_wpcf7" value="6" />
+              <input type="hidden" name="_wpcf7_version" value="5.0" />
+              <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-o1" />
+              <input type="hidden" name="_wpcf7_container_post" value="0" />
+            </div>
+            <h2 class="global-title text-center">Форма обратной связи
+            </h2>
+            <div class="contact-form-cont">
+              <div class="contact-form-wrap">
+                <div class="contact-form-item">
+                  <span class="wpcf7-form-control-wrap text-618">
+                    <input type="text" name="text-618" value="" size="40"
+                      class="wpcf7-form-control wpcf7-text global-input" aria-invalid="false" placeholder="Ваше имя" />
+                  </span>
+                </div>
+                <div class="contact-form-item">
+                  <span class="wpcf7-form-control-wrap tel-167">
+                    <input type="tel" name="tel-167" value="" size="40"
+                      class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel global-input"
+                      aria-required="true" aria-invalid="false" placeholder="Телефон *" />
+                  </span>
+                </div>
+                <button class="btn btn_brown btn_contact-form" onclick="ym(88980032,'reachGoal','target'); return true;">
+                  <img src="./img/button_icon_send.svg" alt="">
+                  <span>Отправить
+                  </span>
+                </button>
+              </div>
+              <div class="form-recaptcha mt-3">
+                <div class="wpcf7-form-control-wrap">
+                  <div data-sitekey="6Lf5bhkmAAAAAB1GfUw3-B6ns8wzl1nNVKwNYl9d"
+                    class="wpcf7-form-control g-recaptcha wpcf7-recaptcha"></div>
+                  <noscript>
+                    <div style="width: 302px; height: 422px;">
+                      <div style="width: 302px; height: 422px; position: relative;">
+                        <div style="width: 302px; height: 422px; position: absolute;">
+                          <iframe
+                            src="https://www.google.com/recaptcha/api/fallback?k=6Lf5bhkmAAAAAB1GfUw3-B6ns8wzl1nNVKwNYl9d"
+                            frameborder="0" scrolling="no"
+                            style="width: 302px; height:422px; border-style: none;"></iframe>
+                        </div>
+                        <div
+                          style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                          <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </noscript>
+                </div>
+              </div>
+              <div class="contact-form-text">
+                Отправляя свои данные, Вы соглашаетесь с <a href="/privacy-policy">Политикой конфиденциальности</a>
+              </div>
+            </div>
+            <!-- Модалка Формы -->
+            <div class="global-success">
+              <div class="global-success-wrap" id="global-success-wrap">
+                <h3 class="global-title">Ваша заявка отправлена!
+                </h3>
+                <div class="global-success__article global-text2 fw-700 red">Мы свяжемся с Вами в течении 30 минут.</div>
+                <a href="#" class="global-success__close btn btn_brown">Вернуться на главную
+                </a>
+              </div>
+            </div>
+            <div class="wpcf7-response-output wpcf7-display-none"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-menus">
+            <ul id="menu-menu-in-footer-1" class="footer-menu">
+              <li id="menu-item-517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-517">
+                <a href="#">Продажа</a>
+              </li>
+              <li id="menu-item-518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-518">
+                <a href="#">Подбор</a>
+              </li>
+              <li id="menu-item-519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519">
+                <a href="#">Страхование</a>
+              </li>
+              <li id="menu-item-519-2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519-2">
+                <a href="#">Межрегиональные сделки</a>
+              </li>
+              <li id="menu-item-519-3" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519-3">
+                <a href="#">Предложения</a>
+              </li>
+            </ul>
+            <ul id="menu-menu-in-footer-2" class="footer-menu">
+              <li id="menu-item-520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-520">
+                <a href="#">Ипотека</a>
+              </li>
+              <li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521">
+                <a href="#">Сопровождение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-logo">
+            <img src="img/CTI бел на син пнг.png" alt="logo-footer">
+          </div>
+          <div class="footer-right">
+            <div class="footer-block-tel">
+              <a href="tel:+7(800)444-64-57" class="footer-tel">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+                  viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path fill="#ffffff" fill-rule="nonzero"
+                    d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+                </svg>
+                <span>8 (800) 444-64-57</span>
+              </a>
+              <a href="tel:+7(800)326-70-10" class="footer-tel">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="22px" version="1.1"
+                  viewbox="0 0 0.57 0.57" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path fill="#ffffff" fill-rule="nonzero"
+                    d="M0.04 0.04l0.03 -0.02c0.03,-0.03 0.07,-0.03 0.1,0 0,0 0.05,0.06 0.05,0.06 0.02,0.03 0.02,0.07 0,0.1l-0.03 0.04c0.03,0.07 0.09,0.13 0.16,0.16l0.04 -0.03c0.03,-0.02 0.07,-0.02 0.1,0 0,0 0.06,0.05 0.06,0.05 0.03,0.03 0.03,0.07 0,0.1l-0.02 0.03c-0.03,0.02 -0.07,0.04 -0.11,0.04 -0.18,0 -0.42,-0.24 -0.42,-0.42 0,-0.04 0.01,-0.08 0.04,-0.11l0 0zm0.38 0.48c0.03,0 0.05,-0.01 0.07,-0.03l0.02 -0.02c0.01,-0.01 0.01,-0.03 0.01,-0.04 0,0 -0.06,-0.04 -0.06,-0.04 -0.01,-0.01 -0.03,-0.01 -0.04,0 0,0 -0.05,0.04 -0.05,0.04 0,0 -0.01,0 -0.02,0 -0.1,-0.04 -0.17,-0.11 -0.21,-0.21 0,-0.01 0,-0.02 0,-0.02 0,0 0.04,-0.05 0.04,-0.05 0.01,-0.01 0.01,-0.03 0,-0.04 0,0 -0.04,-0.06 -0.04,-0.06 -0.01,0 -0.03,0 -0.04,0.01l-0.02 0.02c-0.02,0.02 -0.03,0.04 -0.03,0.07 0,0.16 0.23,0.37 0.37,0.37l0 0z" />
+                </svg>
+                <span>8 (800) 326-70-10</span> 
+              </a>
+            </div>
+            <div class="footer-text global-text">
+              г. Челябинск, пр-кт Ленина 26А <span class="display-block">Бизнес-холл БОВИД, офис 902</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyrite">
+            © 2015-<span class="now-year"></span> . Все права защищены. Агентство недвижимости «CIT group»
+          </div>
+          <ul id="menu-politika-konfidenczialnosti" class="footer-link">
+            <li id="menu-item-523"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-523">
+              <a rel="privacy-policy" href="https://dvoreckiy.com/privacy-policy/">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/88980032" style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
+  </div>
+
+
+  <!-- Библиотеки -->
+  <!-- Burger-768px -->
+  <script src="//dvoreckiy.com/wp-content/cache/wpfc-minified/qsml0m8u/hk8bw.js"></script>
+  <!-- Для слайдера -->
+  <script defer src="//dvoreckiy.com/wp-content/cache/wpfc-minified/mbvy5pew/hk8bw.js"></script>
+
+  <!-- мои -->
+  <script src="js/group.js"></script>
+</body>
+
+</html>
