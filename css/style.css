@@ -2902,10 +2902,6 @@ input[type=checkbox]:active ~ label::before {
     width: 100%;
   }
 
-  .modal-container {
-    height: 400px;
-  }
-
   .footer__list {
     display: block;
   }
@@ -3272,6 +3268,20 @@ input[type=checkbox]:active ~ label::before {
   }
   
   /*** // Шапка header-580px***/  
+
+  .modal-close {
+    top: 0px;
+  } 
+  
+  .main-form__modal-h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .main-form__heading {
+    font-size: 22px;
+  }
 }
    
 
