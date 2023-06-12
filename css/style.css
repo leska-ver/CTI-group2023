@@ -48,9 +48,9 @@
   --color-black: #333;
   --color-shark: #212529;
   --color-raphite: #130b04;
-  --collor-cerulean: #009fe0;/*;rgb(0, 159, 224) - cerulean - голубой фирмы*/
   --color-deepSapphire: #092972;/*синий фирмы rgb(9, 41, 114)*/
   --color-toreaBay: #1134B5;
+  --collor-cerulean: #009fe0;/*;rgb(0, 159, 224) - cerulean - голубой фирмы*/
   --color-osloGray: #8e9297;
   --color-grayNickel: #c7c7c6;
   --color-friarGray: #80807f;
@@ -606,16 +606,17 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 19px;
   font-weight: 500;
   color: var(--color-white);
-  background-color: var(--color-deepSapphire);
   /*синий фирмы rgb(9, 41, 114)*/
+  background-color: var(--color-deepSapphire);
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
 .btn_request:focus {
-  background-color: rgba(35, 83, 224, 0.75);
   /*2353e0*/
+  background-color: rgba(35, 83, 224, 0.75);
+  
 }
 
 .btn_request:hover {
@@ -625,8 +626,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .btn_request:active {
   color: var(--color-white);
-  background-color: var(--collor-cerulean);
   /*;rgb(0, 159, 224) - cerulean - голубой фирмы*/
+  background-color: var(--collor-cerulean);
   -webkit-box-shadow: inherit;
   box-shadow: inherit;
 }
@@ -658,21 +659,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   /*Прокрутку двигаем*/
-  top: 65px;
+  top: 45px;
   right: 0;
 }
 
-.simplebar-scrollbar::before {
+.main-form__container-pol .simplebar-scrollbar::before {
   /*Из библиотеки*/
   /*Здесь(кодепен) цвет не работает*/
   /*На компе и в css работает*/
-  height: 70px;
+  height: 212px;
   background-color: var(--color-deepSapphire);
   /* opacity: 1; */
-}
-
-.simplebar-placeholder {
-  display: none;
 }
 /*--- // Скроллбар---*/
 
@@ -705,11 +702,11 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 50px;
   border-radius: 10px;
-  width: 66.8%;
-  height: max-content;  
-  background-color: white;  
+  width: 1000px;
+  height: 950px;  
+  background-color: var(--color-white);  
   transform: scale(1);
   transition: transform 500ms;  
 }
@@ -718,8 +715,8 @@ input[type="number"]::-webkit-outer-spin-button {
 /*Крест выключатель модального окна*/
 .modal-close {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 45px;
   outline: none; 
   border-radius: 7px;
   border: 1px solid transparent;
@@ -883,8 +880,6 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
 }
 
-
-
 .header__block-menu {
   padding-top: 50px;
 }
@@ -933,7 +928,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .header__link {
+  display: inline-block;
   border: 2px solid transparent;
+  font-family: "Cera Pro";
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
   color: var(--color-deepSapphire);
   outline: none;
   -webkit-transition: color .4s ease-in-out, background-color .4s ease-in-out;
@@ -941,12 +941,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-transition: color .4s ease-in-out, background-color .4s ease-in-out;
   -o-transition: color .4s ease-in-out, background-color .4s ease-in-out;
   transition: color .4s ease-in-out, background-color .4s ease-in-out;
-
-  display: inline-block;
-    font-family: "Cera Pro";
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1;
 }
 
 .header__link:focus {
@@ -975,6 +969,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .header__tel {
   padding: 10px;
+  border: 2px solid transparent;
   font-family: "Cera Pro";
   font-size: 24px;
   font-weight: 600;
@@ -983,7 +978,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
-  border: 2px solid transparent;
 }
 
 .header__tel:focus {
@@ -1000,9 +994,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .header__tel svg {
   display: inline-block;
+  margin-right: 15px;
   width: 22px;
   height: auto;
-  margin-right: 15px;
 }
 
 .header__tel svg * {
@@ -1017,12 +1011,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* block Челябинс */
 .global-welcome-cont {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1034,22 +1028,22 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .global-welcome__title {
-  color: var(--color-white);
+  margin-bottom: 0;
   font-family: "Cera Pro";
   font-size: 83px;
   font-weight: 700;
   line-height: 1em;
-  margin-bottom: 0;
+  color: var(--color-white);
 }
 
 .global-welcome__text {
-  color: var(--color-white);
+  margin-top: 25px;
+  margin-bottom: 0;
   font-family: "Cera Pro";
   font-size: 27px;
   font-weight: 500;
   line-height: 1.2em;
-  margin-bottom: 0;
-  margin-top: 25px;
+  color: var(--color-white);
 }
 
 .global-welcome__text_none1920 {
@@ -1059,13 +1053,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .btn_global-welcome {
   margin-top: 70px;
   padding: 18px 77px;
+  /*Перенос названия - pre-line*/
   white-space: pre-line;
-  /*Перенос названия*/
-  color: var(--color-white);
   font-family: "Cera Pro";
   font-size: 19px;
   font-weight: 500;
   line-height: 1em;
+  color: var(--color-white);
   background: -o-linear-gradient(90deg, rgb(0, 55, 255) 0%, rgb(0, 133, 255) 75%);
   background: -webkit-gradient(90deg, rgb(0, 55, 255) 0%, rgb(0, 133, 255) 75%);
   background: linear-gradient(90deg, rgb(0, 55, 255) 0%, rgb(0, 133, 255) 75%);
@@ -1108,27 +1102,27 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-services-wrap {
+  margin-right: -32px;
+  margin-left: -32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: calc(100% + 64px);
-  margin-left: -32px;
-  margin-right: -32px;
 }
 
 .main-service {
-  width: calc(33.333% - 64px);
-  margin-left: 32px;
   margin-right: 32px;
+  margin-left: 32px;
   margin-bottom: 30px;
   padding: 45px 50px 75px;
+  width: calc(33.333% - 64px);
 }
 
 .main-service_athensGray {
-  background-color: var(--color-deepSapphire);
   /*синий фирмы rgb(9, 41, 114)*/
+  background-color: var(--color-deepSapphire);
 }
 
 .main-service_toreaBay {
@@ -1148,8 +1142,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 87px;
   margin-bottom: 40px;
+  height: 87px;
 }
 
 .main-service-icon img {
@@ -1158,12 +1152,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-service__title {
-  color: var(--color-white);
+  margin-bottom: 0;
   font-family: "Cera Pro";
   font-size: 38px;
   font-weight: 500;
   line-height: 1.2em;
-  margin-bottom: 0;
+  color: var(--color-white);
 }
 
 .main-service__white {
@@ -1177,9 +1171,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .main-about {
   position: sticky;
   position: -webkit-sticky;
-  z-index: 0;
   top: 0;
   background: var(--color-white);
+  z-index: 0;
 }
 
 .main-about .global-wrap-thumb {
@@ -1211,13 +1205,13 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  color: var(--color-raphite);
+  margin-bottom: 45px;
+  padding-top: 70px;
   font-family: "Cera Pro";
   font-size: 38px;
   font-weight: 500;
   line-height: 1.2em;
-  margin-bottom: 45px;
-  padding-top: 70px;
+  color: var(--color-raphite);
 }
 
 .main-about__exclusiv img {
@@ -1229,10 +1223,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /*** Больше экспертов = быстрее и выгоднее сделка main-statiscticks-1920px ***/
 .main-statiscticks {
-  background: var(--color-white);
   position: relative;
-  z-index: 0;
   padding: 150px 0 100px;
+  background: var(--color-white);
+  z-index: 0;
 }
 
 .main-statiscticks-wrap {
@@ -1248,23 +1242,23 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-statisctick__number {
-  color: var(--color-deepSapphire);
-  /*синий фирмы rgb(9, 41, 114)*/
+  margin-bottom: 0;
   font-family: "Cera Pro";
   font-size: 83px;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 0;
+  /*синий фирмы rgb(9, 41, 114)*/
+  color: var(--color-deepSapphire);
 }
 
 .main-statisctick__text {
-  color: var(--color-raphite);
+  margin-top: 15px;
+  margin-bottom: 0;
   font-family: "Cera Pro";
   font-size: 25px;
   font-weight: 500;
   line-height: 1.3em;
-  margin-top: 15px;
-  margin-bottom: 0;
+  color: var(--color-raphite);
 }
 
 .main-statisctick {
@@ -1279,42 +1273,42 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-1920px ***/
 .main-advantages {
-  padding: 0 0 115px;
-  background: var(--color-white);
   position: sticky;
   position: -webkit-sticky;
-  z-index: 0;
   top: 0;
+  padding: 0 0 115px;
+  background: var(--color-white);
+  z-index: 0;
 }
 
 .main-advantages .global-wrap-thumb {
-  width: 49.5%;
-  background: var(--color-deepSapphire);
-  /*синий фирмы rgb(9, 41, 114)*/
   padding: 110px 0;
+  width: 49.5%;
+  /*синий фирмы rgb(9, 41, 114)*/
+  background: var(--color-deepSapphire);
 }
 
 .main-advantages-list {
-  padding: 0;
   margin-bottom: 0;
+  padding: 0;
   max-width: 530px;
 }
 
 .main-advantages-list li {
-  padding-left: 60px;
-  margin-bottom: 60px;
   position: relative;
+  margin-bottom: 60px;
+  padding-left: 60px;
 }
 
 .main-advantages-list li::before {
-  display: block;
   position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
   content: '';
   width: 24px;
   height: 24px;
   background: url("../img/bullet_check.svg") no-repeat center / 100% 100%;
-  top: 2px;
-  left: 0;
 }
 
 .main-advantages-list li:last-child {
@@ -1322,12 +1316,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-advantages-list .title {
-  color: var(--color-white);
+  margin-bottom: 20px;
   font-family: "Cera Pro";
   font-size: 25px;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 20px;
+  color: var(--color-white);
 }
 
 .main-advantages-list p {
@@ -1338,12 +1332,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /*** CIT group управляет недвижимостью main-control-1920px ***/
 .main-control {
-  background: var(--color-white);
   position: sticky;
   position: -webkit-sticky;
-  z-index: 0;
   top: 0;
   padding-top: 20px;
+  background: var(--color-white);
+  z-index: 0;
 }
 
 .main-control .global-wrap-thumb {
@@ -1355,14 +1349,14 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-control .global-wrap-thumb::after {
-  padding-top: 100%;
   display: block;
   content: '';
+  padding-top: 100%;
 }
 
 .global-text_ul-dotted-cerulean ul li::before {
-  background-color: var(--collor-cerulean);
   /*голубой фирмы rgb(0, 159, 224)*/
+  background-color: var(--collor-cerulean);
 }
 /*** // CIT group управляет недвижимостью main-control-1920px ***/
 
@@ -1370,9 +1364,9 @@ input[type="number"]::-webkit-outer-spin-button {
 /*** Полный арсенал возможностей main-functions-1920px ***/
 .main-functions {
   position: relative;
-  z-index: 0;
-  background: var(--color-white);
   padding: 150px 0;
+  background: var(--color-white);
+  z-index: 0;
 }
 
 .main-functions-zag {
@@ -1388,19 +1382,19 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-function {
-  width: 33.333%;
-  padding-right: 20px;
   margin-bottom: 85px;
+  padding-right: 20px;
+  width: 33.333%;
 }
 
 .main-function-icon {
-  height: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 93px;
 }
 
 .main-function-icon img {
@@ -1418,9 +1412,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .main-help {
   position: sticky;
   position: -webkit-sticky;
-  z-index: 0;
   top: 0;
   background: var(--color-white);
+  z-index: 0;
 }
 
 .main-help .global-wrap-thumb {
@@ -1447,185 +1441,24 @@ input[type="number"]::-webkit-outer-spin-button {
 /*** // Вдохновляем других, помогаем своим main-help-1920px ***/
 
 
-/*** contact-form Форма обратной связи + modal - 1920px ***/
-.contact-form {
-  position: relative;
-  z-index: 0;
-  padding: 185px 0;
-  background: var(--color-white);
-}
-
-.contact-form .global-title {
-  margin-bottom: 60px;
-}
-
-.contact-form-cont {
-  max-width: 1240px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.contact-form-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.contact-form-item {
-  width: 34.6%;
-}
-
-.global-input {
-  width: 100%;
-  height: 60px;
-  border: 2px solid var(--color-osloGray);
-  padding-left: 30px;
-  color: var(--color-raphite);
-  font-family: "Cera Pro";
-  font-size: 17px;
-  font-weight: 400;
-}
-
-.global-input::-webkit-input-placeholder {
-  color: var(--color-raphite);
-  opacity: 1;
-}
-
-.global-input::-moz-placeholder {
-  color: var(--color-raphite);
-  opacity: 1;
-}
-
-.global-input:-moz-placeholder {
-  color: var(--color-raphite);
-  opacity: 1;
-}
-
-.global-input:-ms-input-placeholder {
-  color: var(--color-raphite);
-  opacity: 1;
-}
-
-.contact-form-text {
-  margin-top: 30px;
-  color: var(--color-raphite);
-  font-family: Manrope;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.3em;
-}
-
-.contact-form-text a {
-  text-decoration: underline;
-  color: var(--color-raphite);
-}
-
-.contact-form-text a:hover {
-  text-decoration: none;
-  color: var(--color-raphite);
-}
-
-/*contact-form Кнопка "Форма обратной связи"*/
-.btn_brown {
-  color: var(--color-white);
-  font-family: "Cera Pro";
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 1;
-  background-color: rgba(9, 41, 114, 0.75);
-  /*#092972 - deepSapphire - синий фирмы*/
-  padding-right: 15px;
-  padding-left: 15px;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-
-.btn_brown:focus {
-  color: var(--color-white);
-  background-color: var(--color-deepSapphire);
-  /*rgb(9, 41, 114); - deepSapphire - синий фирмы*/
-}
-
-.btn_brown:hover {
-  color: var(--color-white);
-  background-color: rgb(0, 159, 224);
-  /*var(--collor-cerulean) - cerulean - голубой фирмы*/
-}
-
-.btn_brown:active {
-  border: 2px solid var(--color-deepSapphire);
-  /*rgb(9, 41, 114); - deepSapphire - синий фирмы*/
-}
-
-/* // Кнопка "Форма обратной связи"*/
-
-/*Модалка формы*/
-.global-success {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  background: var(--color-white);
-}
-
-.global-success-wrap {
-  max-width: 635px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.global-success__close {
-  max-width: 372px;
-  width: 100%;
-  margin-top: 70px;
-}
-/* // Модалка формы*/
-
-
-
-/***Форма recording-1920px***/
+/*** contact-form recording Форма обратной связи + modal - 1920px ***/
 .recording {
   position: relative;
-  z-index: 0;
   padding: 185px 0;
   background: var(--color-white);
+  z-index: 0;
+}
+
+.recording .global-title {
+  margin-bottom: 60px;
 }
 
 /*---Телефон валидация и маска---*/
 .recording__form {
-  max-width: 1240px;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1240px;
+  width: 100%;
 }
 
 .recording__block {
@@ -1642,27 +1475,22 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /*Для формы отправки*/
-.form__label {
-  position: relative;
-  display: flex;
-  margin-bottom: 20px;
-}
-
 .js-validate-error-label {
   position: absolute;
-  right: 5px;
   top: 100%;
+  right: 5px;
 }
 /* // Для формы отправки*/
 
 .recording__input {
-  width: 100%;
-  border: 2px solid #8e9297;
   padding-left: 30px;
-  color: var(--color-raphite);
+  border: 2px solid var(--color-osloGray);
+  width: 100%;
+  height: 60px;
   font-family: "Cera Pro";
   font-size: 17px;
   font-weight: 400;
+  color: var(--color-raphite);
 }
 
 .recording__input:focus {
@@ -1743,11 +1571,11 @@ input[type=checkbox]:active ~ label::before {
 
 .recording__checkbox-label_js {
   margin-right: 5px;
-  color: var(--color-raphite);
   font-family: Manrope;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.3em;
+  color: var(--color-raphite);
 }
 
 .recording__checkbox-label_js::before {
@@ -1778,6 +1606,8 @@ input[type=checkbox]:active ~ label::before {
   position: absolute;
   top: 5px;
   left: -14.5px;
+  /*Для галки none*/
+  display: none;
   border-top: 2px solid var(--color-white);
   border-right: 2px solid var(--color-white);
   border-radius: 2px;
@@ -1790,7 +1620,6 @@ input[type=checkbox]:active ~ label::before {
   -moz-transition: background-image 0.05s linear;
   -o-transition: background-image 0.05s linear;
   transition: background-image 0.05s linear;
-  display: none;
 }
 
 /*Галка*/
@@ -1829,8 +1658,39 @@ input[type=checkbox]:active ~ label::before {
 
 
 
+
+/*contact-form Кнопка "Форма обратной связи"*/
 .recording__button {
+  padding-right: 15px;
+  padding-left: 15px;  
   width: 24%;
+  font-family: "Cera Pro";
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+  /*#092972 - deepSapphire - синий фирмы*/
+  color: var(--color-white);
+  background-color: rgba(9, 41, 114, 0.75);
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.recording__button:focus {
+  color: var(--color-white);
+  /*rgb(9, 41, 114); - deepSapphire - синий фирмы*/
+  background-color: var(--color-deepSapphire);
+}
+
+.recording__button:hover {
+  color: var(--color-white);
+  background-color: rgb(0, 159, 224);
+  /*var(--collor-cerulean) - cerulean - голубой фирмы*/
+}
+
+.recording__button:active {
+  /*rgb(9, 41, 114); - deepSapphire - синий фирмы*/
+  border: 2px solid var(--color-deepSapphire);
 }
 
 .recording__button img {
@@ -1839,13 +1699,41 @@ input[type=checkbox]:active ~ label::before {
   margin-left: 0;/*перебила стили в .btn_request img - 40px*/
   width: 20px;
 }
-
-
+/* // Кнопка "Форма обратной связи"*/
 /*** // Форма recording-1920px***/
 
 
+/*Модалка формы-1920px*/
+.main-form__modal-h2 {
+  color: #130b04;
+  font-family: "Cera Pro";
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.36em;
+  margin-bottom: 30px;
+}
+/* // Модалка формы*/
 
-/*** // contact-form Форма обратной связи + modal - 1920px ***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2082,7 +1970,7 @@ input[type=checkbox]:active ~ label::before {
   }
 
   /* contact-form Форма обратной связи + modal - 1600px */
-  .btn_brown {
+  .recording__button {
     font-size: 17px;
   }
   /* // contact-form Форма обратной связи + modal - 1600px */
@@ -2287,8 +2175,25 @@ input[type=checkbox]:active ~ label::before {
 
   .recording {
     padding: 100px 0;
-  }
+  }  
   /*** // contact-form Форма обратной связи + modal - 1600px ***/
+
+  /***modal-1600px***/
+  .main-form__block {
+    width: 93%;
+  }
+  
+  .main-form__container-pol {
+    margin: 40px auto;
+    padding: 29px 30px 24px;
+    width: 100%;
+    height: 700px;
+  }
+  
+  .main-form__container-pol .simplebar-scrollbar::before {
+    height: 195px;
+  }  
+  /*** // modal-1600px***/
 
 
   /*** Подвал footer - 1600px ***/
@@ -2387,6 +2292,25 @@ input[type=checkbox]:active ~ label::before {
   }
   /*** CIT group управляет недвижимостью main-control-1385 ***/
 
+  .modal-container {
+    margin: 20px auto;
+    padding: 20px 30px;
+    height: 450px;
+  }
+
+  .main-form__modal-h2 {
+    font-size: 36px;
+    line-height: inherit;
+    margin-bottom: 20px;
+  }
+
+  .main-form__heading {
+    font-size: 24px;
+  }
+
+  .main-form__container-pol .simplebar-scrollbar::before {
+    height: 40px;
+  }
 
   /*** Подвал footer - 1385px ***/
   .footer__list {
@@ -2652,19 +2576,9 @@ input[type=checkbox]:active ~ label::before {
   .global-input {
     height: 50px;
     padding-left: 10px;
-  }
-
-  .contact-form-text {
-    font-size: 14px;
-    margin-top: 20px;
-  }
+  } 
   
-  .global-success__close {
-    max-width: 300px;
-    margin-top: 30px;
-  }  
-  
-  .btn_brown {
+  .recording__button {
     min-height: 50px;
     font-size: 15px;
   }
@@ -2988,6 +2902,10 @@ input[type=checkbox]:active ~ label::before {
     width: 100%;
   }
 
+  .modal-container {
+    height: 400px;
+  }
+
   .footer__list {
     display: block;
   }
@@ -3013,13 +2931,15 @@ input[type=checkbox]:active ~ label::before {
   }
 
   .global-wrap-thumb {
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     margin-left: -15px;
     margin-right: -15px;
   }
 
   .global-wrap-text {
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     padding: 25px 50px 0 15px;
     margin-left: -15px;
     margin-right: -15px;
@@ -3125,7 +3045,8 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;    
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     z-index: 0;
   }
 
@@ -3173,7 +3094,8 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;    
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     z-index: 0;
   }
   /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-767px ***/
@@ -3189,7 +3111,8 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     z-index: 0;
   }
 
@@ -3223,7 +3146,8 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
+    width: 100%;
     z-index: 0;
   }
 
@@ -3245,21 +3169,11 @@ input[type=checkbox]:active ~ label::before {
     margin-bottom: 25px;
   }
 
-  .contact-form-wrap {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .contact-form-item {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
   .global-input {
     height: 45px;
   }
 
-  .btn_brown {
+  .recording__button {
     font-size: 14px;
   }
   /*** // contact-form Форма обратной связи + modal - 767px ***/
@@ -3366,21 +3280,6 @@ input[type=checkbox]:active ~ label::before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*hren*/
 
 
@@ -3391,70 +3290,3 @@ input[type=checkbox]:active ~ label::before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*hren*/
-
-
-
-.main-form__block {
-  width: 93%;
-}
-
-.main-form__container-pol {
-  margin: 40px auto;
-  padding: 29px 30px 24px;
-  width: 100%;
-}
-.modal-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  border-radius: 10px;
-  width: 66.8%;
-  height: max-content;
-  background-color: white;
-  transform: scale(1);
-  transition: transform 500ms;
-}
-
-.main-form__block .simplebar-content {
-  height: 336px;
-}
-
-.main-form__modal-h2 {
-  margin-top: 0;
-  margin-bottom: 7px;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-
-@media (max-width: 1385px) {
-  .modal-container {
-  width: 93%;
-  }
-}
-
-@media (max-width: 999px) {
-  .modal-container {
-    width: 81%;
-  }
-}
