@@ -1,173 +1,62 @@
 document.addEventListener('DOMContentLoaded', function() {
   // console.log(); находит в js-ce ошибку. Deftools
 
-  // 1 js
-  const wpcf7 = {
-    "apiSettings": {
-      "root": "https:\/\/dvoreckiy.com\/wp-json\/contact-form-7\/v1",
-      "namespace": "contact-form-7\/v1"
-    },
-    "recaptcha": {
-      "messages": {
-        "empty": "Please verify that you are not a robot."
-      }
-    }
-  };
 
 
+  /*Клик БУРГЕР-Саши*/
+  // $ предполагает использование библиотеки jQuery. В codepen-е без неё работает, в других местах без библиотеки jQuery не работает
+  const burger = document.querySelector('#burger');
+  const menu = document.querySelector('#menu');
 
-  //2 js
-  (function (m, e, t, r, i, k, a) {
-    m[i] = m[i] || function () {
-      (m[i].a = m[i].a || []).push(arguments)
-    };
-    m[i].l = 1 * new Date();
-    for (var j = 0; j < document.scripts.length; j++) {
-      if (document.scripts[j].src === r) {
-        return;
-      }
-    }
-    k = e.createElement(t),
-      a = e.getElementsByTagName(t)[0],
-      k.async = 1,
-      k.src = r,
-      a.parentNode.insertBefore(k, a)
-  })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  ym(88980032, "init", {
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true,
-    webvisor: true
+  burger.addEventListener('click',  function() {
+    burger.classList.add('open');
+
+    menu.classList.toggle('is-active');
+    
+    if (menu.classList.contains('is-active')) {
+     menu.style.transition = 'transform .7s ease-in-out';
+   }
   });
-
-
- 
-
-
-
-
-
-
-
+  menu.addEventListener('transitionend', function () {
+    if (!menu.classList.contains('is-active')) {
+        menu.style.transition = '';
+        burger.classList.remove('open');
+   }
+  });
+  
 
 
 
-
-
-
-
-
-
-
-
-
-
-  /*//Слайдер product d-31
-  const swiperOpr = document.querySelector(".product")// Для обёртки if
-  if (swiperOpr) { // Обёртка if. Спасение Gulp-а от null в браузере
-    const productSwiper = new Swiper('.product__swiper-container', {
-      // Дополнительные параметры
-      direction: 'horizontal',
-      loop: false,
-
-      keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-      },
-
-      //slidesPerView: 'auto',
-      slidesPerGroup: 1,//Одна картинка - один шаг
-      spaceBetween: 12,
-
-
-      //Кнопки навигации
-      navigation: {
-        nextEl: '.product__btn_next',
-        prevEl: '.product__btn_prev',
-        disabledClass: 'product__btn-disabled',
-      },
-
-      breakpoints: {
-        320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 17,
-        },
-
-        580: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 32,
-        },
-
-        768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 32,
-        },
-
-        999: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 32,
-        },
-
-        1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 32,
-        },
-      
-        1225: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 25,
-        },
-      },
-
-
-      //Бесконечное листание страниц
-      speed: 3000,//Интервал ожидания
-
-      autoplay: {
-        delay: 5000,//Интервал ожидания
-        disableOnInteraction: false,      
-      }
-
-	  });
-	}; 
-
-
-  // inputmask - Телефон main-form
-  const form = document.querySelector('.main-form__form_js');
+  // inputmask - Телефон
+  const form = document.querySelector('.form-js');
   if (form) {// Обёртка if. Спасение Gulp-а от null в браузере 
     const telSelector = form.querySelector('input[type="tel"]');
     const inputMask = new Inputmask('+7 (999) 999-99-99');
     inputMask.mask(telSelector);
 
-    new window.JustValidate('.main-form__form_js', {
+    new window.JustValidate('.form-js', {
       rules: {
         name: {
-			  required: true,
-			  minLength: 2,
-			  maxLenght: 10,
-			  strength: {
-				custom: '^[а-яёЁ\s]+$'//только по русски текст
-        //custom: '^[a-yeO\s]+$'только по английски текст
-			  }
-        },  
+          required: true,
+          minLength: 2,
+          maxLenght: 10,
+          strength: {
+          custom: '^[а-яёЁ\s]+$'//только по русски текст
+          //custom: '^[a-yeO\s]+$'только по английски текст
+          }
+        }, 
         tel: {
           required: true,
           function: () => {
             const phone = telSelector.inputmask.unmaskedvalue();
             return Number(phone) && phone.length === 10;
           }
-        },
+        }, 
         checkbox: { // Обязательная галка
-        required: true
+          required: true
         }
       },
-      colorWrong: '#ff6972',
+      colorWrong: '#ff0f0f',
       messages: {
         name: {
           required: 'Введите ваше имя',
@@ -176,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
           strength: 'Текст только по русски'
           //strength: 'Текст только по английски'
         },
-        email: {
-          email: 'Недопустимый формат',
-          required: 'Введите email'
-        },
+        // email: {
+        //   email: 'Недопустимый формат',
+        //   required: 'Введите email'
+        // },
         tel: {
           required: 'Введите ваш телефон',
           function: 'Здесь должно быть 10 символов без +7'
@@ -203,8 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
 
-
-            
+        // method отправляет на сервер POST   
         xhr.open('POST', 'mail.php', true);
         xhr.send(formData);
 
@@ -213,8 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   };
 
-  
-  
+
+
   // Модальное окно для нескольких окон. Модалка не прокручиваеться.//
   const activeClass = "modal-active";
   const buttons = document.querySelectorAll(".modalBtn-js");
@@ -237,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const modalContent = modal.querySelector(".modal-container");
       const close = modal.querySelector(".modal-close");
            
-      // --Cтили body при открытие модального окна-- //
+      /* --Cтили body при открытие модального окна-- */
       modal.classList.add('modal-active');		 
       if (modal.classList.contains(activeClass)) {
         document.body.style.overflow  = 'hidden';
@@ -253,10 +141,11 @@ document.addEventListener('DOMContentLoaded', function() {
       
     });
   }; 
+
    
 
 
-  //Плавный скролл по якорям. В любое место можно кинуть.//
+  //Плавный скролл по якорям. В любое место можно кинуть. Всегда ниже всех. Библиотеку jquery(пол..) в html. Работает с помощбю id(#)//
   $(function(){
     $('a[href^="#"]').click(function(){
       var target = $(this).attr('href');
@@ -264,6 +153,24 @@ document.addEventListener('DOMContentLoaded', function() {
     (target).offset().top},800);
       return false;
     })
-  });*/
+  });
   
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 });
