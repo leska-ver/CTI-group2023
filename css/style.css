@@ -2299,6 +2299,7 @@ input[type=checkbox]:active ~ label::before {
   .modal-container {
     margin: 20px auto;
     padding: 20px 30px;
+    height: 500px;
   }
 
   .main-form__container-pol .simplebar-scrollbar::before {
@@ -3171,6 +3172,10 @@ input[type=checkbox]:active ~ label::before {
     font-size: 14px;
   }
   /*** // contact-form Форма обратной связи + modal - 767px ***/
+
+  .modal-container {
+    min-height: 200px;
+  }
 
   .main-form__modal-h2 {
     font-size: 23px;
