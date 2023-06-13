@@ -2885,6 +2885,9 @@ input[type=checkbox]:active ~ label::before {
     
   .recording__label .js-validate-error-label {
     top: -21px;
+  }  
+  
+  .recording__label_none999 .js-validate-error-label {  
     display: none;
   }
 
