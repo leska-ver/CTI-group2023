@@ -153,8 +153,8 @@ ul li {
 }
 
 a {
-  color: var(--collor-cerulean);
   /*;rgb(0, 159, 224) - cerulean - голубой фирмы*/
+  color: var(--collor-cerulean);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -298,7 +298,7 @@ textarea:link {
   -webkit-appearance: button;
 }
 
-/* .wrapper { wrapper здесь ломает слайдер. НЕ УДАЛЯТЬ!!!
+/* .wrapper {wrapper здесь ломает слайдер. НЕ УДАЛЯТЬ!!!
   min-height: 100%;
   overflow: hidden;
 } */
@@ -848,7 +848,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* // Прячет navbar-collapse - меню*/
 
 .header {
-  position: relative;
+  position: relative; 
   padding-bottom: 25px;
   width: 100%;
 }
@@ -860,6 +860,10 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 100%;
   background: linear-gradient(90deg, rgb(0, 55, 255) 0%, rgb(0, 133, 255) 50%);
   opacity: 0.8;
+}
+
+.header__container {
+  position: relative;
 }
 
 .header__logo {
@@ -2757,9 +2761,9 @@ input[type=checkbox]:active ~ label::before {
 
   .header__block-menu {
     position: fixed;
-    top: 0;
+    /* top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     left: 0;
     padding-top: 25px;
     width: 101%;
@@ -2929,14 +2933,12 @@ input[type=checkbox]:active ~ label::before {
   }
 
   .global-wrap-thumb {
-    /* width: calc(100% + 30px); */
     width: 100%;
     margin-left: -15px;
     margin-right: -15px;
   }
 
   .global-wrap-text {
-    /* width: calc(100% + 30px); */
     width: 100%;
     padding: 25px 50px 0 15px;
     margin-left: -15px;
@@ -3033,7 +3035,7 @@ input[type=checkbox]:active ~ label::before {
 
 
   
-  /*** О компании main-about-767px ***/
+  /*** О компании main-about-770px ***/
   .main-about {
     position: relative;
     padding: 0;
@@ -3043,7 +3045,6 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;    
-    /* width: calc(100% + 30px); */
     width: 100%;
     z-index: 0;
   }
@@ -3055,10 +3056,10 @@ input[type=checkbox]:active ~ label::before {
     background: var(--color-white);
     z-index: 1;
   }
-  /*** // О компании main-about-767px ***/
+  /*** // О компании main-about-770px ***/
    
   
-  /*** Больше экспертов = быстрее и выгоднее сделка main-statiscticks-767px ***/
+  /*** Больше экспертов = быстрее и выгоднее сделка main-statiscticks-770px ***/
   .main-statiscticks {
     padding: 50px 0;
   }
@@ -3073,10 +3074,10 @@ input[type=checkbox]:active ~ label::before {
     align-items: center;
     text-align: center;
   }
-  /*** // Больше экспертов = быстрее и выгоднее сделка main-statiscticks-767px ***/
+  /*** // Больше экспертов = быстрее и выгоднее сделка main-statiscticks-770px ***/
 
 
-  /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-767px ***/
+  /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-770px ***/
   .main-advantages {
     position: relative;
     padding-bottom: 10px;
@@ -3092,14 +3093,13 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;    
-    /* width: calc(100% + 30px); */
     width: 100%;
     z-index: 0;
   }
-  /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-767px ***/
+  /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-770px ***/
 
 
-  /*** CIT group управляет недвижимостью main-control-767px ***/
+  /*** CIT group управляет недвижимостью main-control-770px ***/
   .main-control {
     position: relative;
     padding: 0;
@@ -3109,7 +3109,6 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    /* width: calc(100% + 30px); */
     width: 100%;
     z-index: 0;
   }
@@ -3117,16 +3116,16 @@ input[type=checkbox]:active ~ label::before {
   .main-control .global-wrap-text {
     position: relative;
     padding: 25px 50px 0 15px;
-    z-index: 1;
     background: var(--color-white);
+    z-index: 1;
   }
-  /*** // CIT group управляет недвижимостью main-control-767px ***/
+  /*** // CIT group управляет недвижимостью main-control-770px ***/
  
 
   /*** Полный арсенал возможностей main-functions-767 ***/
   .main-function {
-    width: 50%;
     padding-right: 10px;
+    width: 50%;
   }
 
   .main-function .global-title2 {
@@ -3144,7 +3143,6 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    /* width: calc(100% + 30px); */
     width: 100%;
     z-index: 0;
   }
@@ -3152,13 +3150,13 @@ input[type=checkbox]:active ~ label::before {
   .main-help .global-wrap-text {
     position: relative;
     padding: 25px 50px 0 15px;
-    z-index: 0;
     background: var(--color-white);
+    z-index: 0;
   }
   /*** // Вдохновляем других, помогаем своим main-help-767 ***/
 
   
-  /*** contact-form Форма обратной связи + modal - 767px ***/
+  /*** contact-form Форма обратной связи + modal - 770px ***/
   .contact-form {
     padding: 40px 0 70px;
   }
@@ -3174,7 +3172,7 @@ input[type=checkbox]:active ~ label::before {
   .recording__button {
     font-size: 14px;
   }
-  /*** // contact-form Форма обратной связи + modal - 767px ***/
+  /*** // contact-form Форма обратной связи + modal - 770px ***/
 
   .modal-container {
     margin: auto;
@@ -3193,7 +3191,7 @@ input[type=checkbox]:active ~ label::before {
   }  
 
 
-  /*** Подвал footer - 767px ***/
+  /*** Подвал footer - 770px ***/
   .footer__top {
     padding: 30px 0;
     -webkit-box-orient: vertical;
@@ -3252,10 +3250,10 @@ input[type=checkbox]:active ~ label::before {
   }
 
   .footer__copyrite {
-    width: 100%;
     margin-top: 10px;
+    width: 100%;
   }
-  /*** Подвал footer - 767px ***/
+  /*** Подвал footer - 770px ***/
 }
 
   
@@ -3287,9 +3285,9 @@ input[type=checkbox]:active ~ label::before {
   
   /*** // Шапка header-580px***/    
   .main-form__modal-h2 {
+    margin-bottom: 16px;
     font-size: 28px;
     line-height: 1;
-    margin-bottom: 16px;
   }
 
   .main-form__heading {
@@ -3302,8 +3300,6 @@ input[type=checkbox]:active ~ label::before {
 
 
 
-
-/*hren*/
 
 
 
