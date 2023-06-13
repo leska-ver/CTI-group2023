@@ -715,8 +715,8 @@ input[type="number"]::-webkit-outer-spin-button {
 /*Крест выключатель модального окна*/
 .modal-close {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 5px;
+  right: 33px;
   outline: none; 
   border-radius: 7px;
   border: 1px solid transparent;
@@ -3174,12 +3174,20 @@ input[type=checkbox]:active ~ label::before {
   /*** // contact-form Форма обратной связи + modal - 767px ***/
 
   .modal-container {
+    margin: auto;
+    padding: 15px 30px;
     min-height: 200px;
   }
 
   .main-form__modal-h2 {
     font-size: 23px;
   }
+
+  .modal-close {
+    right: 30px;
+    width: 31px;
+    font-size: 16px;
+  }  
 
 
   /*** Подвал footer - 767px ***/
@@ -3274,12 +3282,7 @@ input[type=checkbox]:active ~ label::before {
     margin-right: auto;
   }
   
-  /*** // Шапка header-580px***/  
-
-  .modal-close {
-    top: 0px;
-  } 
-  
+  /*** // Шапка header-580px***/    
   .main-form__modal-h2 {
     font-size: 28px;
     line-height: 1;
