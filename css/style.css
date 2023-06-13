@@ -3176,7 +3176,7 @@ input[type=checkbox]:active ~ label::before {
   .modal-container {
     margin: auto;
     padding: 15px 30px;
-    min-height: 200px;
+    min-height: 552px;
   }
 
   .main-form__modal-h2 {
