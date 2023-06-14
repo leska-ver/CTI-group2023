@@ -849,8 +849,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .header {
   position: relative; 
+  margin-left: -15px;
   padding-bottom: 25px;
-  width: 100%;
+  width: 103%;
 }
 
 .header::before {
@@ -2731,13 +2732,6 @@ input[type=checkbox]:active ~ label::before {
     top: 18.5px;
   }
 
-  .burger.open {
-    /*fixed чтобы выключатель следовал за менюшкой*/
-    position: fixed;
-    top: 0;
-    right: 28px;
-  }
-
   /*Крест*/
   .burger.open span:nth-child(1) {
     top: 13px;
@@ -2769,14 +2763,11 @@ input[type=checkbox]:active ~ label::before {
   }
 
   .header__block-menu {
-    position: fixed;
-    /* top: 0;
-    right: 0;
-    bottom: 0; */
+    position: absolute;
     left: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 101%;
+    width: 100%;
     background-color: var(--color-white);
     z-index: 16;
   }
