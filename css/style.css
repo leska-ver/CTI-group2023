@@ -2632,6 +2632,8 @@ input[type=checkbox]:active ~ label::before {
 
   .header {
     padding-bottom: 0;
+    background: linear-gradient(90deg, rgb(0, 55, 255) 0%, rgb(0, 133, 255) 50%);
+    min-height: 82px;
   }
 
   .header__logo {
@@ -2733,7 +2735,7 @@ input[type=checkbox]:active ~ label::before {
     /*fixed чтобы выключатель следовал за менюшкой*/
     position: fixed;
     top: 0;
-    right: 0;
+    right: 28px;
   }
 
   /*Крест*/
@@ -3311,9 +3313,35 @@ input[type=checkbox]:active ~ label::before {
 
 
 
+/*proba*/
+.exchange, .escort, .insurance, .offers {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 500px;
+  background: var(--color-white);
+  z-index: 0;
+}
 
+.exchange .global-wrap-text, .escort .global-wrap-text, .insurance .global-wrap-text, .offers .global-wrap-text {
+  padding-top: 20px;
+}
 
+.exchange-div, .escort-div, .insurance-div, .offers-div {
+  height: 500px;
+}
 
+.main-help__container {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
 
 
 
