@@ -125,9 +125,9 @@ body {
   /*Для .wrapper*/
 }
 
-/* [tabindex="-1"]:focus{
-	outline:0!important;
-} */
+[tabindex="-1"]:focus{
+	outline:0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -2729,6 +2729,13 @@ input[type=checkbox]:active ~ label::before {
     top: 18.5px;
   }
 
+  .burger.open {
+    /*fixed чтобы выключатель следовал за менюшкой*/
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
   /*Крест*/
   .burger.open span:nth-child(1) {
     top: 13px;
@@ -2751,8 +2758,8 @@ input[type=checkbox]:active ~ label::before {
   .burger.open span:nth-child(3) {
     top: 13px;
     left: -5px;
-    width: 38px;
     /*38px длина палочки*/
+    width: 38px;    
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -2766,6 +2773,7 @@ input[type=checkbox]:active ~ label::before {
     bottom: 0; */
     left: 0;
     padding-top: 25px;
+    padding-bottom: 25px;
     width: 101%;
     background-color: var(--color-white);
     z-index: 16;
