@@ -49,7 +49,7 @@ $mail->Subject = $form_subject;
  
 // Тело письма
 $body = $message;
-// $mail->isHTML(true);  это если прям верстка
+$mail->isHTML(true);  //это если прям верстка
 $mail->msgHTML($body);
 
 
