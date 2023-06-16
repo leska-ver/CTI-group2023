@@ -851,7 +851,6 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative; 
   margin-left: -15px;
   padding-bottom: 25px;
-  width: 103%;
 }
 
 .header::before {
@@ -865,6 +864,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .header__container {
   position: relative;
+  padding: 0 35px;
 }
 
 .header__logo {
@@ -1278,42 +1278,42 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-1920px ***/
 .main-advantages {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
   padding: 0 0 115px;
   background: var(--color-white);
+  position: sticky;
+  position: -webkit-sticky;
   z-index: 0;
+  top: 0;
 }
 
 .main-advantages .global-wrap-thumb {
-  padding: 110px 0;
   width: 49.5%;
-  /*синий фирмы rgb(9, 41, 114)*/
   background: var(--color-deepSapphire);
+  /*синий фирмы rgb(9, 41, 114)*/
+  padding: 110px 0;
 }
 
 .main-advantages-list {
-  margin-bottom: 0;
   padding: 0;
+  margin-bottom: 0;
   max-width: 530px;
 }
 
 .main-advantages-list li {
-  position: relative;
-  margin-bottom: 60px;
   padding-left: 60px;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 .main-advantages-list li::before {
-  position: absolute;
-  top: 2px;
-  left: 0;
   display: block;
+  position: absolute;
   content: '';
   width: 24px;
   height: 24px;
   background: url("../img/bullet_check.svg") no-repeat center / 100% 100%;
+  top: 2px;
+  left: 0;
 }
 
 .main-advantages-list li:last-child {
@@ -1321,12 +1321,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .main-advantages-list .title {
-  margin-bottom: 20px;
+  color: var(--color-white);
   font-family: "Cera Pro";
   font-size: 25px;
   font-weight: 500;
   line-height: 1;
-  color: var(--color-white);
+  margin-bottom: 20px;
 }
 
 .main-advantages-list p {
@@ -1417,9 +1417,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .main-help {
   position: sticky;
   position: -webkit-sticky;
+  z-index: 0;
   top: 0;
   background: var(--color-white);
-  z-index: 0;
 }
 
 .main-help .global-wrap-thumb {
@@ -2125,7 +2125,7 @@ input[type=checkbox]:active ~ label::before {
     width: 20px;
     height: 20px;
   }
-  /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-1600px***/
+/*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-1600px***/
 
 
   /*** Полный арсенал возможностей main-functions-1600px***/
@@ -2675,7 +2675,7 @@ input[type=checkbox]:active ~ label::before {
 
   .burger {
     display: block;
-    margin: 20px 25px 20px auto;
+    margin: 20px 0 20px auto;
   }
 
   .burger:focus {
@@ -2765,9 +2765,10 @@ input[type=checkbox]:active ~ label::before {
   .header__block-menu {
     position: absolute;
     left: 0;
+    margin-left: -44px;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 100%;
+    width: 125%;
     background-color: var(--color-white);
     z-index: 16;
   }
@@ -2818,8 +2819,7 @@ input[type=checkbox]:active ~ label::before {
   }
 
   .header__nav {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 50px;
   }
 
   .header__list {
@@ -3045,7 +3045,8 @@ input[type=checkbox]:active ~ label::before {
   .main-about .global-wrap-thumb {
     position: sticky;
     position: -webkit-sticky;
-    top: 0;    
+    top: 0;   
+    margin: 0; 
     width: 100%;
     z-index: 0;
   }
@@ -3078,26 +3079,28 @@ input[type=checkbox]:active ~ label::before {
   /*** // Больше экспертов = быстрее и выгоднее сделка main-statiscticks-770px ***/
 
 
-  /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-770px ***/
+  /*** Кроме своего штата мы вовлекаем в процесс: main-advantages-767px ***/
   .main-advantages {
     position: relative;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
   }
 
   .main-advantages .global-wrap-text {
     position: relative;
-    z-index: 1;
+    margin-left: 0;
     background: var(--color-white);
+    z-index: 1;
   }
 
   .main-advantages .global-wrap-thumb {
     position: sticky;
     position: -webkit-sticky;
-    top: 0;    
+    top: 0; 
+    margin-left: 0;   
     width: 100%;
     z-index: 0;
   }
-  /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-770px ***/
+  /*** // Кроме своего штата мы вовлекаем в процесс: main-advantages-767px ***/
 
 
   /*** CIT group управляет недвижимостью main-control-770px ***/
@@ -3110,6 +3113,7 @@ input[type=checkbox]:active ~ label::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    margin: 0;
     width: 100%;
     z-index: 0;
   }
@@ -3135,15 +3139,17 @@ input[type=checkbox]:active ~ label::before {
   /*** // Полный арсенал возможностей main-functions-767 ***/
 
 
-  /*** Вдохновляем других, помогаем своим main-help-767 ***/
+  /*** Вдохновляем других, помогаем своим main-help-770 ***/
   .main-help {
     position: relative;
+    padding: 0;
   }
 
   .main-help .global-wrap-thumb {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    margin: 0;
     width: 100%;
     z-index: 0;
   }
@@ -3269,16 +3275,28 @@ input[type=checkbox]:active ~ label::before {
   
 
   /***Шапка header-580px***/
+  .header__container {
+    padding: 0 15px 0 35px;
+  }
+
   .header__picture-svg {
-    margin: 11px 0 15px;
+    margin: 11px 11px 15px;
     width: 80px;
     height: 40px;
   }  
+
+  .header__nav {
+    padding: 0 25px;
+  }
    
   .header__list {
     display: flex;
     flex-direction: column;
   }
+
+  .header__block-menu {
+    width: 127%;
+  }  
 
   .header__block-burger {
     margin-right: auto;
@@ -3304,6 +3322,19 @@ input[type=checkbox]:active ~ label::before {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*proba*/
 .exchange, .escort, .insurance, .offers {
   position: sticky;
@@ -3320,18 +3351,6 @@ input[type=checkbox]:active ~ label::before {
 
 .exchange-div, .escort-div, .insurance-div, .offers-div {
   height: 500px;
-}
-
-.main-help__container {
-  display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
 }
 
 

@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
           required: true,
           minLength: 2,
           maxLenght: 10,
-          strength: {
-          custom: '^[а-яёЁ\s]+$'//только по русски текст
+          /*strength: {
+          //custom: '^[а-яёЁ\s]+$'только по русски текст
           //custom: '^[a-yeO\s]+$'только по английски текст
-          }
+          }*/
         }, 
         tel: {
           required: true,
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
         name: {
           required: 'Введите ваше имя',
           minLength: 'Введите 3 и более символов',
-          maxLength: 'Запрещено вводить более 15 символов',
-          strength: 'Текст только по русски'
+          maxLength: 'Запрещено вводить более 15 символов'
+          // strength: 'Текст только по русски'
           //strength: 'Текст только по английски'
         },
         // email: {
